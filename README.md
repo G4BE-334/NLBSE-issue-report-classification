@@ -37,7 +37,7 @@ Issues with multiple labels are excluded from the dataset.
 
 The dataset is then split into a training set (50%) and a test set (50%).
 
-> The dataset has already been extracted to avoid costs on your end, please keep reading to find hyperlinks to both the training and test set.
+> The dataset has already been extracted by the commitee of the competition.
 
 ## Training
 
@@ -45,29 +45,8 @@ We utilized the OpenAI API to fine-tune the gpt-3.5-turbo model for each reposit
 In total, 5 models were fine-tuned and evaluiated against its correspondent testing dataset.
 
 
-## Evaluation
+## Results
 
-Submissions are evaluated based on their class-detection performance over the provided [test set](https://raw.githubusercontent.com/nlbse2024/issue-report-classification/main/data/issues_test.csv?token=GHSAT0AAAAAACG4EVQDKGFUQA2CR27PPS2SZI633MA). 
-The classifier should assign one label to an issue. Just like the training set, the test set is balanced.
-
-Participants must evaluate their project classifiers on the test set of the respective project and report the results in their submission.
-
-**Important:** you may apply any preprocessing or feature engineering on this dataset except sampling, rebalancing, undersampling or oversampling techniques.
-
-Repository classification performance is measured using the F1 score over all the three classes (averaged). Cross-repository performance is measured as the arithmetic mean of the five repository F1 scores.
-
-A submission (i.e., paper) in the tool competition must provide, for each of the 5 repositories and cross-repo:
-- Precision, for each class and cross-class average
-- Recall, for each class and cross-class average
-- F1 score, for each class and cross-class average
-
-Cross-class aggregation can be done using both the macro and micro averaging method, the result will be the same since the dataset is balanced.
-
-Cross-repo aggregation is done using the arithmetic mean.
-
-Please note that whilst all of the above measures must be provided for acceptance, the submissions will **only** be ranked by their cross-repo F1 score.
-
-> You can use the table from the baseline below as a template for your evaluation.
 
 ## Baselines
 
