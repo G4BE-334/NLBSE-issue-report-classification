@@ -2,72 +2,24 @@
 
 # NLBSE'24 Tool Competition on Issue Report Classification
 
+## Team
+- Gabriel Aracena, CS Student
+- Kyle Luster, CS Student
+- Fabio Marcos de Abreu Santos, PhD Machine Learning Professor
+
 ## Introduction
 
 The issue report classification competition consists of building and testing a set of multi-class classification models 
 to classify issue reports as belonging to one category representing the type of information they convey.
 
-We provide a dataset encompassing 3 thousand labeled issue reports 
+It was provided a dataset encompassing 3 thousand labeled issue reports 
 (as bugs, enhancements, and questions) 
 extracted from 5 real open-source projects. 
-You are invited to leverage this dataset for evaluating your classification approaches and compare the achieved results against proposed baseline approaches based on Sentence-Transformers.
+We were invited to leverage this dataset for evaluating our classification approaches and compare the achieved results against proposed baseline approaches based on Sentence-Transformers.
 
-You must train, tune and evaluate your multi-class classification models using the provided training and test sets.
+We tuned and evaluated the multi-class classification models using the provided training and test sets.
 
-> Please refer to our [tool competition page](https://nlbse2024.github.io/tools/) to read more about the tool competition and learn how to participate.
-
-## Citing related work
-
-Since you will be using our dataset (and possibly one of our notebooks) as well as the original work behind the dataset, please cite the following references in your paper:
-
-```bibtex
-@inproceedings{nlbse2024,
-  author={Kallis, Rafael and Colavito, Giuseppe and Al-Kaswan, Ali and Pascarella, Luca and Chaparro, Oscar and Rani, Pooja},
-  title={The NLBSE'24 Tool Competition},
-  booktitle={Proceedings of The 3rd International Workshop on Natural Language-based Software Engineering (NLBSE'24)},
-  year={2024}
-}
-```
-
-```bibtex
-@article{kallis2020tickettagger,
-  author={Kallis, Rafael and Di Sorbo, Andrea and Canfora, Gerardo and Panichella, Sebastiano},
-  title={Predicting issue types on GitHub},
-  journal={Science of Computer Programming},
-  volume={205},
-  pages={102598},
-  year={2021},
-  issn={0167-6423},
-  doi={https://doi.org/10.1016/j.scico.2020.102598},
-  url={https://www.sciencedirect.com/science/article/pii/S0167642320302069}
-}
-```
-
-```bibtex
-@inproceedings{kallis2019tickettagger,
-  author    = {Kallis, Rafael and Di Sorbo, Andrea and Canfora, Gerardo and Panichella, Sebastiano},
-  title     = {Ticket Tagger: Machine Learning Driven Issue Classification},
-  booktitle = {2019 {IEEE} International Conference on Software Maintenance and Evolution,
-               {ICSME} 2019, Cleveland, OH, USA, September 29 - October 4, 2019},
-  pages     = {406--409},
-  publisher = { {IEEE} },
-  year      = {2019},
-  doi       = {10.1109/ICSME.2019.00070},
-}
-```
-
-```bibtex
-@inproceedings{colavito2023few,
-  author={Colavito, Giuseppe and Lanubile, Filippo and Novielli, Nicole},
-  booktitle={2023 IEEE/ACM 2nd International Workshop on Natural Language-Based Software Engineering (NLBSE)}, 
-  title={Few-Shot Learning for Issue Report Classification}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={16-19},
-  doi={10.1109/NLBSE59153.2023.00011}
-}
-```
+> Please refer to the [tool competition page](https://nlbse2024.github.io/tools/) to read more about the tool competition and learn how to participate.
 
 ## Dataset
 
@@ -85,17 +37,13 @@ Issues with multiple labels are excluded from the dataset.
 
 The dataset is then split into a training set (50%) and a test set (50%).
 
-The process of extracting the dataset is described in the [dataset notebook](1-Dataset.ipynb).
-
 > The dataset has already been extracted to avoid costs on your end, please keep reading to find hyperlinks to both the training and test set.
 
 ## Training
 
-You are provided a [training set](https://raw.githubusercontent.com/nlbse2024/issue-report-classification/main/data/issues_train.csv?token=GHSAT0AAAAAACG4EVQDBT5ISO7BHQ5PV63QZI63Z6Q) encompassing 1.5 thousand labeled issue reports extracted from 5 real open source projects. The training-set is balanced, i.e., it contains the same number of issues for each class.
+We utilized the OpenAI API to fine-tune the gpt-3.5-turbo model for each repository.
+In total, 5 models were fine-tuned and evaluiated against its correspondent testing dataset.
 
-Participants must train a multi-class classifier for each of the 5 projects, i.e., we expect 5 classifiers per model submission.
-
-Participants are free to select and transform variables from the training set as they please. Pretrained models are permitted but can only be finetuned on the given training set. Any inputs or features used to create or finetune the classifier, must be derived from the provided training set. Participants may preprocess, sample, apply over/under-sampling, select a subset of the attributes, perform feature-engineering, filter records, split the training set into a model-finetuning validation set, etc. Please contact us if you have any question about this.
 
 ## Evaluation
 
@@ -125,7 +73,7 @@ Please note that whilst all of the above measures must be provided for acceptanc
 
 Participants are encouraged, but not required, to use the baseline as a template for their submission. Each template downloads the dataset, performs basic preprocessing, trains a set of classifiers and evaluates them on the test set.
 
-### [SetFit](2-Template-SetFit.ipynb)
+### [SetFit]
 
 | Repository            | Label         | Precision | Recall | F1         |
 | --------------------- | ------------- | --------- | ------ | ---------- |
