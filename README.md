@@ -59,10 +59,10 @@ To reproduce the results one will need to create an OpenAI API key. If you don't
 | facebook/react        | question      | 0.9024    | 0.7400 | 0.8132     |
 | facebook/react        | average       | 0.8635    | 0.8600 | 0.8579     |
 | | | | | |
-| tensorflow/tensorflow | bug           | 0.9167    | 0.8800 | 0.8980     |
-| tensorflow/tensorflow | feature       | 0.9310    | 0.8100 | 0.8663     |
-| tensorflow/tensorflow | question      | 0.7607    | 0.8900 | 0.8203     |
-| tensorflow/tensorflow | average       | 0.8695    | 0.8600 | 0.8615     |
+| tensorflow/tensorflow | bug           | 0.9072    | 0.8800 | 0.8934     |
+| tensorflow/tensorflow | feature       | 0.9318    | 0.8200 | 0.8723     |
+| tensorflow/tensorflow | question      | 0.7913    | 0.9100 | 0.8465     |
+| tensorflow/tensorflow | average       | 0.8768    | 0.8700 | 0.8708     |
 | | | | | |
 | microsoft/vscode      | bug           | 0.8539    | 0.7600 | 0.8042     |
 | microsoft/vscode      | feature       | 0.8000    | 0.8400 | 0.8195     |
@@ -74,15 +74,15 @@ To reproduce the results one will need to create an OpenAI API key. If you don't
 | bitcoin/bitcoin       | question      | 0.7381    | 0.6200 | 0.6739     |
 | bitcoin/bitcoin       | average       | 0.7679    | 0.7700 | 0.7665     |
 | | | | | |
-| opencv/opencv         | bug           | 0.7455    | 0.8200 | 0.7810     |
-| opencv/opencv         | feature       | 0.8511    | 0.8000 | 0.8247     |
-| opencv/opencv         | question      | 0.8438    | 0.8100 | 0.8265     |
-| opencv/opencv         | average       | 0.8134    | 0.8100 | 0.8107     |
+| opencv/opencv         | bug           | 0.7288    | 0.8600 | 0.7890     |
+| opencv/opencv         | feature       | 0.9091    | 0.8000 | 0.8511     |
+| opencv/opencv         | question      | 0.8617    | 0.8100 | 0.8351     |
+| opencv/opencv         | average       | 0.8332    | 0.8233 | 0.8250     |
 | | | | | |
 | overall               | bug           | 0.8511    | 0.8460 | 0.8485     |
 | overall               | feature       | 0.8127    | 0.8420 | 0.8271     |
 | overall               | question      | 0.7959    | 0.7720 | 0.7838     |
-| overall               | average       | 0.8227    | 0.8200 | **0.8213** |
+| overall               | average       | 0.8247    | 0.8247 | **0.8247** |
 
 ## Baselines
 
