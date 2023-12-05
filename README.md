@@ -44,13 +44,47 @@ The dataset is then split into a training set (50%) and a test set (50%).
 We utilized the OpenAI API to fine-tune the gpt-3.5-turbo model for each repository.
 In total, 5 models were fine-tuned and evaluiated against its correspondent testing dataset.
 
+## Reproducibility
+
+To reproduce the results one will need to create an OpenAI API key. If you don't have an OpenAI account, create one for free. Then go to https://platform.openai.com/docs/overview on the left side select "API Keys". Then click on "+ Create new secret key" and name it how you want. After the key is created you can paste it in [jupyter notebook](issueclassificationgpt.ipynb) where it says "open-ai-key" on cells 11 and 47. Since jupyter notebooks save the outputs and results there is no need to create your own open ai key though. 
 
 ## Results
 
+### [Open AI API]
+
+| Repository            | Label         | Precision | Recall | F1         |
+| --------------------- | ------------- | --------- | ------ | ---------- |
+| facebook/react        | bug           | 0.8333    | 0.9500 | 0.8878     |
+| facebook/react        | feature       | 0.8557    | 0.8900 | 0.8725     |
+| facebook/react        | question      | 0.9024    | 0.7400 | 0.8132     |
+| facebook/react        | average       | 0.8635    | 0.8600 | 0.8579     |
+| | | | | |
+| tensorflow/tensorflow | bug           | 0.9167    | 0.8800 | 0.8980     |
+| tensorflow/tensorflow | feature       | 0.9310    | 0.8100 | 0.8663     |
+| tensorflow/tensorflow | question      | 0.7607    | 0.8900 | 0.8203     |
+| tensorflow/tensorflow | average       | 0.8695    | 0.8600 | 0.8615     |
+| | | | | |
+| microsoft/vscode      | bug           | 0.8539    | 0.7600 | 0.8042     |
+| microsoft/vscode      | feature       | 0.8000    | 0.8400 | 0.8195     |
+| microsoft/vscode      | question      | 0.7547    | 0.8000 | 0.7767     |
+| microsoft/vscode      | average       | 0.8029    | 0.8000 | 0.8001     |
+| | | | | |
+| bitcoin/bitcoin       | bug           | 0.7339    | 0.8000 | 0.7656     |
+| bitcoin/bitcoin       | feature       | 0.8318    | 0.8900 | 0.8599     |
+| bitcoin/bitcoin       | question      | 0.7381    | 0.6200 | 0.6739     |
+| bitcoin/bitcoin       | average       | 0.7679    | 0.7700 | 0.7665     |
+| | | | | |
+| opencv/opencv         | bug           | 0.7455    | 0.8200 | 0.7810     |
+| opencv/opencv         | feature       | 0.8511    | 0.8000 | 0.8247     |
+| opencv/opencv         | question      | 0.8438    | 0.8100 | 0.8265     |
+| opencv/opencv         | average       | 0.8134    | 0.8100 | 0.8107     |
+| | | | | |
+| overall               | bug           | 0.8511    | 0.8460 | 0.8485     |
+| overall               | feature       | 0.8127    | 0.8420 | 0.8271     |
+| overall               | question      | 0.7959    | 0.7720 | 0.7838     |
+| overall               | average       | 0.8227    | 0.8200 | **0.8213** |
 
 ## Baselines
-
-Participants are encouraged, but not required, to use the baseline as a template for their submission. Each template downloads the dataset, performs basic preprocessing, trains a set of classifiers and evaluates them on the test set.
 
 ### [SetFit]
 
