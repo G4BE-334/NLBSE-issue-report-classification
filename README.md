@@ -64,10 +64,10 @@ To reproduce the results one will need to create an OpenAI API key. If you don't
 | tensorflow/tensorflow | question      | 0.7913    | 0.9100 | 0.8465     |
 | tensorflow/tensorflow | average       | 0.8768    | 0.8700 | 0.8708     |
 | | | | | |
-| microsoft/vscode      | bug           | 0.8539    | 0.7600 | 0.8042     |
-| microsoft/vscode      | feature       | 0.8000    | 0.8400 | 0.8195     |
-| microsoft/vscode      | question      | 0.7547    | 0.8000 | 0.7767     |
-| microsoft/vscode      | average       | 0.8029    | 0.8000 | 0.8001     |
+| microsoft/vscode      | bug           | 0.8511    | 0.8000 | 0.8247     |
+| microsoft/vscode      | feature       | 0.8131    | 0.8700 | 0.8406     |
+| microsoft/vscode      | question      | 0.7980    | 0.7900 | 0.7938     |
+| microsoft/vscode      | average       | 0.8207    | 0.8200 | 0.8198     |
 | | | | | |
 | bitcoin/bitcoin       | bug           | 0.7339    | 0.8000 | 0.7656     |
 | bitcoin/bitcoin       | feature       | 0.8318    | 0.8900 | 0.8599     |
@@ -79,10 +79,10 @@ To reproduce the results one will need to create an OpenAI API key. If you don't
 | opencv/opencv         | question      | 0.8617    | 0.8100 | 0.8351     |
 | opencv/opencv         | average       | 0.8332    | 0.8233 | 0.8250     |
 | | | | | |
-| overall               | bug           | 0.8511    | 0.8460 | 0.8485     |
-| overall               | feature       | 0.8127    | 0.8420 | 0.8271     |
-| overall               | question      | 0.7959    | 0.7720 | 0.7838     |
-| overall               | average       | 0.8247    | 0.8247 | **0.8247** |
+| overall               | bug           | 0.8644    | 0.8540 | 0.8592     |
+| overall               | feature       | 0.8064    | 0.8580 | 0.8314     |
+| overall               | question      | 0.8165    | 0.7740 | 0.7947     |
+| overall               | average       | 0.8287    | 0.8287 | **0.8287** |
 
 ## Baselines
 
