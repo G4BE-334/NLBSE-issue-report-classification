@@ -79,10 +79,10 @@ To reproduce the results one will need to create an OpenAI API key. If you don't
 | opencv/opencv         | question      | 0.8617    | 0.8100 | 0.8351     |
 | opencv/opencv         | average       | 0.8332    | 0.8233 | 0.8250     |
 | | | | | |
-| overall               | bug           | 0.8644    | 0.8540 | 0.8592     |
-| overall               | feature       | 0.8064    | 0.8580 | 0.8314     |
-| overall               | question      | 0.8165    | 0.7740 | 0.7947     |
-| overall               | average       | 0.8287    | 0.8287 | **0.8287** |
+| overall               | bug           | 0.8109    | 0.8580 | 0.8321     |
+| overall               | feature       | 0.8683    | 0.8540 | 0.8593     |
+| overall               | question      | 0.8183    | 0.7740 | 0.7925     |
+| overall               | average       | 0.8324    | 0.8287 | **0.8280** |
 
 ## Baselines
 
