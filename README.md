@@ -46,7 +46,9 @@ In total, 5 models were fine-tuned and evaluiated against its correspondent test
 
 ## Reproducibility
 
-To reproduce the results one will need to create an OpenAI API key. If you don't have an OpenAI account, create one for free. Then go to https://platform.openai.com/docs/overview on the left side select "API Keys". Then click on "+ Create new secret key" and name it how you want. After the key is created you can paste it in [jupyter notebook](issueclassificationgpt.ipynb) where it says "open-ai-key" on cells 11 and 47. Since jupyter notebooks save the outputs and results there is no need to create your own open ai key though. 
+To reproduce the results one will need to create an OpenAI API key. If you don't have an OpenAI account, create one for free. Then go to https://platform.openai.com/docs/overview on the left side select "API Keys". Then click on "+ Create new secret key" and name it how you want. After the key is created you can paste it in [jupyter notebook](issueclassificationgpt.ipynb) where it says "open-ai-key" on cells 11 and 47. Since jupyter notebooks save the outputs and results there is no need to create your own open ai key though.
+
+**Please follow the instructions in the markdown on the Jupyter Notebook. DO NOT press "Run all cells" since a lot of cells will depend on API calls that take some time to process, even after it is executed.** 
 
 ## Results
 
