@@ -9,46 +9,46 @@
 
 ## Introduction
 
-The issue report classification competition consists of building and testing a set of multi-class classification models 
-to classify issue reports as belonging to one category representing the type of information they convey.
+The given challenge in this competition involved constructing and evaluating a set of multi-class classification models tailored for the purpose of identifying which category a given issue report belonged in.
 
-It was provided a dataset encompassing 3 thousand labeled issue reports 
-(as bugs, enhancements, and questions) 
-extracted from 5 real open-source projects. 
-We were invited to leverage this dataset for evaluating our classification approaches and compare the achieved results against proposed baseline approaches based on Sentence-Transformers.
+Participants were provided with a dataset comprised of 3,000 labeled issue reports sourced from five authentic open-source projects, spanning bugs, enhancements, and questions. Leveraging this dataset, participants were tasked creating a novel method of classification and to compare the results from their model with a provided baseline.
 
-We tuned and evaluated the multi-class classification models using the provided training and test sets.
+The multi-class classification models were tuned and evaluated using the provided training and test sets.
 
-> Please refer to the [tool competition page](https://nlbse2024.github.io/tools/) to read more about the tool competition and learn how to participate.
+> Please refer to the [tool competition page](https://nlbse2024.github.io/tools/) to read more about the tool competition.
 
-## Dataset
+## Dataset 
 
-A dataset of 3 thousand publicly-available issue reports is extracted.
+Our dataset is comprised of 3,000 genuine issue reports extracted for this task.
 
-Each issue report contains the following information:
+Each issue report includes the following essential components:
 - Repository
 - Label
 - Title
 - Body
 
-Each issue is labeled with one class that indicates the issue type, namely, `bug`, `feature`, and `question`.
+Every issue is labeled with a single class denoting its type, specifically categorized as `bug`, `feature`, or `question`.
 
-Issues with multiple labels are excluded from the dataset.
+Notably, issues bearing multiple labels have been omitted from our dataset to ensure clarity and consistency.
 
-The dataset is then split into a training set (50%) and a test set (50%).
+Subsequently, the dataset is partitioned into a training set (50%) and a test set (50%).
 
-> The dataset has already been extracted by the commitee of the competition.
+> It's worth noting that the dataset has been curated by the competition's committee, ensuring its authenticity and relevance to the competition.
 
 ## Training
 
-We utilized the OpenAI API to fine-tune the gpt-3.5-turbo model for each repository.
-In total, 5 models were fine-tuned and evaluiated against its correspondent testing dataset.
+We employed the OpenAI API to fine-tune the GPT-3.5-turbo model for each repository.
+In total, five models were fine-tuned and evaluated against their corresponding testing datasets.
 
 ## Reproducibility
 
-To reproduce the results one will need to create an OpenAI API key. If you don't have an OpenAI account, create one for free. Then go to https://platform.openai.com/docs/overview on the left side select "API Keys". Then click on "+ Create new secret key" and name it how you want. After the key is created you can paste it in [jupyter notebook](issueclassificationgpt.ipynb) where it says "open-ai-key" on cells 11 and 47. Since jupyter notebooks save the outputs and results there is no need to create your own open ai key though.
+To reproduce the results one will need to create an OpenAI API key. If you don't have an OpenAI account, you can create one for free. Then, go to https://platform.openai.com/docs/overview on the left side select "API Keys". Then click on "+ Create new secret key" and enter a name. After the key is created you can paste it in [jupyter notebook](issueclassificationgpt.ipynb) where it says "open-ai-key" on cells 11 and 47.
 
-**Please follow the instructions in the markdown on the Jupyter Notebook. DO NOT press "Run all cells" doing that won't work since a lot of cells will depend on API calls that take some time to process, even after it is executed.** 
+>Note: As jupyter notebooks saves the outputs and results it is not necessary to create an API key to view our results.
+
+**Instructions for the Jupyter Notebook:**
+
+Kindly adhere to the guidance provided within the Markdown cells of the Jupyter Notebook. Avoid executing "Run all cells" as many cells rely on API calls that necessitate some processing time, even after execution.
 
 ## Results
 
