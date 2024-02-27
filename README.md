@@ -11,11 +11,11 @@
 
 The given challenge in this competition involved constructing and evaluating a set of multi-class classification models tailored for the purpose of identifying which category a given issue report belonged in.
 
-Participants were provided with a dataset comprised of 3,000 labeled issue reports sourced from five authentic open-source projects, spanning bugs, enhancements, and questions. Leveraging this dataset, participants were tasked creating a novel method of classification and to compare the results from their model with a provided baseline.
+Participants were provided with a dataset comprised of 3,000 labeled issue reports sourced from five authentic open-source projects, spanning bugs, enhancements, and questions. Leveraging this dataset, participants were tasked creating a novel method of classification to compare the results from their model with a provided baseline.
 
 The multi-class classification models were tuned and evaluated using the provided training and test sets.
 
-> Please refer to the [tool competition page](https://nlbse2024.github.io/tools/) to read more about the tool competition.
+> Note: Please refer to the [tool competition page](https://nlbse2024.github.io/tools/) to read more about the tool competition.
 
 ## Dataset 
 
@@ -33,7 +33,7 @@ Notably, issues bearing multiple labels have been omitted from our dataset to en
 
 Subsequently, the dataset is partitioned into a training set (50%) and a test set (50%).
 
-> It's worth noting that the dataset has been curated by the competition's committee, ensuring its authenticity and relevance to the competition.
+> Note: The dataset has been curated by the competition's committee, ensuring its authenticity and relevance to the competition.
 
 ## Training
 
