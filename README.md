@@ -50,6 +50,25 @@ To reproduce the results one will need to create an OpenAI API key. If you don't
 
 Kindly adhere to the guidance provided within the Markdown cells of the Jupyter Notebook. Avoid executing "Run all cells" as many cells rely on API calls that necessitate some processing time, even after execution.
 
+## Dependencies and Requirements
+
+To run the code successfully, ensure you have the following dependencies installed:
+
+- Python 3.x
+- OpenAI API Key
+- Required Python libraries (specified in `requirements.txt`)
+
+## Error Handling and Troubleshooting 
+
+If you encounter any errors or issues while running the code, consider the following troubleshooting tips:
+
+- Check that all dependencies are installed correctly and up-to-date.
+- Ensure you have provided a valid API key for the OpenAI API.
+- Verify that the input data is correctly formatted and contains the necessary information.
+- Refer to the documentation and code comments for additional guidance on specific functions or methods.
+  
+>Note: If you are unable to resolve the issue, feel free to reach out to the team for assistance.
+
 ## Results
 
 ### [Open AI API]
